@@ -1,0 +1,133 @@
+/* 
+    1-common Styles
+    2-General Styles
+    3-Sections
+       3.0- Header Section
+       3.1- Home section
+       3.2- About section
+       3.3- Portfolio section
+       3.4- Services section
+       3.5- Prices section
+       3.6- Team section
+       3.7- Blog Page
+       3.8- Content section
+       3.9- Footer section
+*/
+
+/* 1 - common Styles*/
+/* 
+    - container
+    - overlay
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 ( left to right)
+    - hover effect 2 (top to bottom)
+*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hover-opacity {
+  transition: opacity 0.5s;
+}
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+.ltr-effect,
+.tb-effect {
+  position: relative;
+}
+.ltr-effect:after,
+.tb-effect:after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333333;
+  z-index: -1;
+}
+.ltr-effect:after {
+  width: 0px;
+  transition: width 0.5s;
+}
+.tb-effect:after {
+  height: 0px;
+  transition: height 0.5s;
+}
+.ltr-effect:hover:after {
+  width: 100%;
+}
+
+.tb-effect:hover:after {
+  height: 100%;
+}
+
+/* General Styles */
+body {
+  font-family: "Varela Round", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  /* 6195ff */
+  --mainColor: #1c6494;
+  --grayColor: #999999;
+  --bg-gray: #f9f9f9;
+  --whiteColor: #ffffff;
+}
+.clear {
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, sans-serif;
+}
+button {
+  font-family: inherit;
+}
+a {
+  text-decoration: none;
+}
+.section-header {
+  text-align: center;
+}
+.section-header .section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  background-color: var(--mainColor);
+  margin: 0 auto;
+}
+.pd-y {
+  padding: 8% 0;
+}
+ul {
+  list-style: none;
+}
+.pd-b-section {
+  padding-bottom: 5%;
+}
