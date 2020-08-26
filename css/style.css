@@ -79,10 +79,12 @@ body {
   box-sizing: border-box;
 }
 :root {
-  /* 6195ff */
-  --mainColor: #1c6494;
-  --grayColor: #999999;
-  --bg-gray: #f9f9f9;
+  /* main--> #6195ff */
+  /* gray--> #999999*/
+  /* bg-gray--> #f9f9f9*/
+  --mainColor: #6195ff;
+  --grayColor: #717171;
+  --bg-gray: #e5eefc;
   --whiteColor: #ffffff;
 }
 .clear {
